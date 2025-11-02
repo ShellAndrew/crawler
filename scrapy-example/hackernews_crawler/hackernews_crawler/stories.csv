@@ -1,0 +1,36 @@
+type,story_id,title,url,source
+story,45785840,SailfishOS: A Linux-based European alternative to dominant mobile OSes,https://sailfishos.org/info/,hackernews
+story,45785858,OS maintained by a single developer since 1997: Visopsys,https://visopsys.org/,hackernews
+story,45782136,Updated practice for review articles and position papers in ArXiv CS category,https://blog.arxiv.org/2025/10/31/attention-authors-updated-practice-for-review-articles-and-position-papers-in-arxiv-cs-category/,hackernews
+story,45784179,Claude Code Can Debug Low-Level Cryptography,https://words.filippo.io/claude-debugging/,hackernews
+story,45782981,GHC now runs in the browser,https://discourse.haskell.org/t/ghc-now-runs-in-your-browser/13169,hackernews
+story,45784596,"Beginner-friendly, unofficial documentation for Helix text editor",https://helix-editor.vercel.app/start-here/basics/,hackernews
+story,45783640,Show HN: Why write code if the LLM can just do the thing? (web app experiment),https://github.com/samrolken/nokode,hackernews
+story,45786324,Pomelli,https://labs.google.com/pomelli/about/,hackernews
+story,45781298,SQLite concurrency and why you should care about it,https://jellyfin.org/posts/SQLite-locking/,hackernews
+story,45784729,From 400 Mbps to 1.7 Gbps: A WiFi 7 Debugging Journey,https://blog.tymscar.com/posts/wifi7speedhunt/,hackernews
+story,45762160,The Smol Training Playbook: The Secrets to Building World-Class LLMs,https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook,hackernews
+story,45785986,OpenDesk by the Centre for Digital Sovereignty,https://www.opendesk.eu/en/product,hackernews
+story,45733453,RegEx Crossword,https://jimbly.github.io/regex-crossword/,hackernews
+story,45742886,The hardest program I've ever written (2015),https://journal.stuffwithstuff.com/2015/09/08/the-hardest-program-ive-ever-written/,hackernews
+story,45783114,Chat Control proposal fails again after public opposition,https://andreafortuna.org/2025/11/01/chat-control-proposal-fails-again-after-massive-public-opposition/,hackernews
+story,45730940,Austria: Pylons as sculpture for public acceptance of expanding electrification,https://www.goodgoodgood.co/articles/austrian-power-giants-power-line-animals,hackernews
+story,45784455,Word2vec-style vector arithmetic on docs embeddings,https://technicalwriting.dev/embeddings/arithmetic/index.html,hackernews
+story,45781397,CharlotteOS – An Experimental Modern Operating System,https://github.com/charlotte-os/Catten,hackernews
+story,45786192,Show HN: KeyLeak Detector – Scan websites for exposed API keys and secrets,https://github.com/Amal-David/keyleak-detector,hackernews
+story,45785794,AI Broke Interviews,https://yusufaytas.com/ai-broke-interviews/,hackernews
+story,45779860,Hard Rust requirements from May onward,https://lists.debian.org/debian-devel/2025/10/msg00285.html,hackernews
+story,45783699,"Visible from space, Sudan's bloodied sands expose a massacre of thousands",https://www.telegraph.co.uk/world-news/2025/10/28/sudan-bloodied-sands-massacre-thousands/,hackernews
+story,45783376,"Ask HN: Where to begin with ""modern"" Emacs?",item?id=45783376,hackernews
+story,45719662,I built my own CityMapper,https://asherfalcon.com/blog/posts/5,hackernews
+story,45755495,NJVL: Nim's New Intermediate Representation,https://github.com/nim-lang/nimony/blob/master/doc/njvl-spec.md,hackernews
+story,45783206,Studies increasingly find links between air pollutants and dementia,https://www.nytimes.com/2025/11/01/health/alzheimers-dementia-air-pollution.html,hackernews
+story,45783835,Reconfigurable Analog Computers,https://arxiv.org/abs/2510.25942,hackernews
+story,45782348,Open-Source Ada: From Gateware to Application,https://blog.adacore.com/open-source-ada-from-gateware-to-application,hackernews
+story,45784185,Czech police forced to turn off facial recognition cameras at the Prague airport,https://edri.org/our-work/czech-police-forced-to-turn-off-facial-recognition-cameras-at-the-prague-airport-thanks-to-the-ai-act/,hackernews
+story,45732677,Frank Gasking on preserving «lost» games,https://spillhistorie.no/2025/10/24/frank-gasking-on-preserving-lost-games/,hackernews
+discussion,45782981,,,
+discussion,45784179,,,
+discussion,45782136,,,
+discussion,45785858,,,
+discussion,45785840,,,
