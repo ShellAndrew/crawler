@@ -1,2 +1,10 @@
 
 https://www.scrapingbee.com/blog/crawling-python/
+
+
+Algorithm
+
+initialize crawler: O(1)
+
+initialize starting seed & id: O(1)
+
