@@ -8,3 +8,24 @@ initialize crawler: O(1)
 
 initialize starting seed & id: O(1)
 
+crawler is a class that creates a dictionary that stores the pages
+crawler dictionary maps the page to the other pages that it links to
+node is the elements stored in the dictionary
+
+crawler will repeatedly go through the wikipedia pages in a BFS style algorithm
+
+using memoization to efficiently add new elements the dictionary
+    -else if element is already in the dictionary just append to the list that the node mapsd to
+
+dictionary outline:
+dict = {
+    Key1 {type:Node} : [Key2 {type:Node}, Key3 {type:Node}]
+    Key2 {type:Node} : [Key1 {type:Node}, Key3 {type:Node}]
+    Key3 {type:Node} : [Key1 {type:Node}, Key2 {type:Node}]
+    ....
+    etc
+
+}
+
+outcomes:
+pagerank of all wikipedia articles related to Queen Maud Land
