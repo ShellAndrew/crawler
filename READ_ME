@@ -29,3 +29,16 @@ dict = {
 
 outcomes:
 pagerank of all wikipedia articles related to Queen Maud Land
+
+Current Results:
+    Estimated Highest Ranking Webpage is Antarctic Treaty System
+    Converged after 4 iterations of algorithm on numerous trials
+    Likely due to highest number of outlinks - 500
+
+In Progress:
+    Verify Results
+    Formalize Algorithm Design & Runtime
+    Proof of Computation for Any Webpage
+    
+
+
