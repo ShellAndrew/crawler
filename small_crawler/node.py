@@ -25,7 +25,7 @@ class Node():
         return hash(self.title)
 
     def __repr__(self):
-        return f"Node('{self.title}', Rank={self.rank:.4f})"
+        return f"Node('{self.title}', Rank={self.page_rank:.4f})"
     
     def __str__(self):
         return f"title: '{self.title}' rank: '{self.page_rank}' out_degree: {self.out_degree}"

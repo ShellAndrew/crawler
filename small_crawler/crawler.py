@@ -21,6 +21,14 @@ class Crawler:
         self.visited = set()
         self.visited.add(self.start_seed)
         self.num_nodes = 1
+        self.node_registry = {}
+
+    def get_or_create_node(self, title):
+        if title not in self.node_registry:
+            new_node = node.Node(title)
+            self.node_registry[title] = new_node
+            return new_node
+        return self.node_registry[title]
         
     def crawl(self):
         with open("./small_crawler/data.csv", 'a', newline='', encoding="utf-8") as csvfile:
@@ -32,7 +40,7 @@ class Crawler:
             #limit at 500 maybe?
             #we will likely find every article related to Queen_Maud_Land on wikipedia (hopefully)
             pages_count = 0
-            limit = 200
+            limit = 100
             header = {'User-Agent': 'andys_first_webcrawler/v1.0 (my email: aashell24@yahoo.com)'}
 
             
@@ -70,14 +78,16 @@ class Crawler:
                     #print(json_data['query']['pages'][0]['extlinks'])
                     page_data = json_data['query']['pages'][0]
 
-                    current_node = node.Node(current_seed)
-                    self.graph[current_node] = []
+                    current_node = self.get_or_create_node(current_seed)
+                    
+                    if current_node not in self.graph:
+                        self.graph[current_node] = []
 
                     if 'links' in page_data:
                         for ext_url in page_data['links']:
                             title = ext_url['title']
                             ns = ext_url['ns']
-                            current_title = node.Node(title)
+                            current_title = self.get_or_create_node(title)
                             if ns == 0:
                                 self.graph[current_node].append(current_title)
                             

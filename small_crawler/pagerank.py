@@ -24,18 +24,21 @@ class PageRank:
         all_nodes = set(self.graph.keys())
         for target_nodes in self.graph.values():
             all_nodes.update(target_nodes)
+
+        for node in all_nodes:
+            if node not in self.graph:
+                self.graph[node] = []
+
+        self.num_nodes = len(all_nodes)
         initial_rank = 1.0 / self.num_nodes
 
         inlinks = {}
 
         for node in all_nodes:
             node.page_rank = initial_rank
-            if not hasattr(node, 'out_degree'):
-                node.out_degree = 0
+            node.out_degree = len(self.graph[node])
         
         for source_node, target_nodes in self.graph.items():
-            source_node.out_degree = len(target_nodes)
-
             for target_node in target_nodes:
                 if target_node not in inlinks:
                     inlinks[target_node] = []
@@ -51,7 +54,7 @@ class PageRank:
         
         node.page_rank = 0.15 + (0.85 * val)
 
-    def calculate_pagerank(self, iterations=200, damping_factor = 0.85) -> node:
+    def calculate_pagerank(self, iterations=500, damping_factor = 0.85) -> node:
         self.create_inlink()
         all_nodes = set(self.graph.keys())
         for target_nodes in self.graph.values():
@@ -76,11 +79,16 @@ class PageRank:
                 new_ranks[node] = new_rank
                 change = abs(new_rank - node.page_rank)
                 max_change = max(max_change, change)
-        
+                #print(f"max_change: {max_change}")
+                print(f"number_outlinks: '{self.graph[node]}" )
             for node in node_list:
                 node.page_rank = new_ranks[node]
 
-            if iteration > 2 and max_change < 0.0001:
+            print(f"Iteration {iteration + 1}: max_change = {max_change:.6f}")
+            
+
+
+            if iteration > 2 and max_change < 0.000001:
                 print(f"Converged after {iteration + 1} iterations.")
                 break
 
