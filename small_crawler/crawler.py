@@ -18,10 +18,10 @@ class Crawler:
         self.header = {'User-Agent': 'andys_first_webcrawler/v1.0 (my email: aashell24@yahoo.com)'}
         self.start_seed = "Queen_Maud_Land"
         self.queue = deque([self.start_seed])
-        self.visited = set()
-        self.visited.add(self.start_seed)
-        self.num_nodes = 1
-        self.node_registry = {}
+        self.visited = set() #set containing strings of all the titles of the webpages visited (str type)
+        self.visited.add(self.start_seed) 
+        self.num_nodes = 1 #keeps track of the numbeer of unique nodes we have i.e. how many unique websites we've visited (int type)
+        self.node_registry = {} #keeps track of the unique nodes we have (node type)
 
     def get_or_create_node(self, title):
         if title not in self.node_registry:
